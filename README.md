@@ -1,10 +1,9 @@
-# Autorole Module
+![autorole](https://socialify.git.ci/pylonmodules/autorole/image?description=1&descriptionEditable=A%20Pylon%20Module%20for%20adding%20autoroles%20to%20users&font=Raleway&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
 > Made by **[proudparrot2](https://github.com/proudparrot2)**
 >
 > If you haven't used Pylon Modules before, or are confused by what's in this README, please read our [guide repository](https://github.com/pylonmodules/guide)
 
-A module that adds a role to a user after they join the server
 
 ## Installation
 1. Make a new file in the Pylon Studio Editor called `modules/autorole.ts`, and add the contents of `module.ts` to it.
