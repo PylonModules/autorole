@@ -1,22 +1,21 @@
 import * as config from '../config';
 
 discord.on(discord.Event.GUILD_MEMBER_ADD, async (member) => {
-  if (!config.autorole.enabled) return;
-  var guild = await discord.getGuild(member.guildId);
-  if (!guild)
+  var channel = await discord.getGuildTextChannel(config.joinleave.channel);
+  if (!channel)
     return console.log(
-      '[PYLON MODULES] Something went wrong - please join our support server.'
+      "[JOINLEAVE] You set an incorrect channel ID in your configuration. Please ensure it's valid."
     );
+  channel.sendMessage(`<@${member.user.id}>\n${config.joinleave.joinmessage}`);
+});
 
-  config.autorole.roles.forEach(async (roleId) => {
-    member.addRole(roleId);
-    var role = await guild.getRole(roleId);
-    if (!role)
-      return console.log(
-        `[AUTOROLE] Your autorole with id ${roleId} is invalid. Please make sure it is correct!`
-      );
-    console.log(
-      `[AUTOROLE] Added autorole ${role.name} to ${member.user.username}`
+discord.on(discord.Event.GUILD_MEMBER_REMOVE, async (member) => {
+  var channel = await discord.getGuildTextChannel(config.joinleave.channel);
+  if (!channel)
+    return console.log(
+      "[JOINLEAVE] You set an incorrect channel ID in your configuration. Please ensure it's valid."
     );
-  });
+  channel.sendMessage(
+    `**${member.user.username}**\n${config.joinleave.leavemessage}`
+  );
 });
