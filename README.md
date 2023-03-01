@@ -10,10 +10,10 @@ A module that adds a role to a user after they join the server
 1. Make a new file in the Pylon Studio Editor called `modules/autorole.ts`, and add the contents of `module.ts` to it.
 2. Add this configuration to your config.ts file:
 ```ts
-autorole: {
+const autorole = {
   role: '<role id here>'
   enabled: true
-},
+}; export { autorole };
 ```
 Replace `<role id here>` with the role that you want to be added to new users.
 
