@@ -11,8 +11,8 @@ A module that adds a role to a user after they join the server
 2. Add this configuration to your config.ts file:
 ```ts
 const autorole = {
-  role: '<role id here>'
-  enabled: true
+  role: '<role id here>',
+  enabled: true,
 }; export { autorole };
 ```
 Replace `<role id here>` with the role that you want to be added to new users.
