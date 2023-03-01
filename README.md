@@ -1,4 +1,4 @@
-![autorole](https://socialify.git.ci/pylonmodules/autorole/image?description=1&descriptionEditable=A%20Pylon%20Module%20for%20adding%20autoroles%20to%20users&font=Raleway&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+![autorole](https://socialify.git.ci/pylonmodules/autorole/image?description=1&descriptionEditable=A%20Pylon%20Module%20for%20adding%20autoroles%20to%20users&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
 
 > Made by **[proudparrot2](https://github.com/proudparrot2)**
 >
